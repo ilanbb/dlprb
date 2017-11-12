@@ -1,7 +1,7 @@
 # dlprb
 DLPRB: A Deep Learning Approach for Predicting Protein-RNA Binding
 
-Implementation of two deep neural networks (DNN's): a convolutional neural netwrk (CNN) and a recurrent neural network (RNN).
+A TensorFlow implementation of two deep neural networks (DNN's): a convolutional neural netwrk (CNN) and a recurrent neural network (RNN).
 
 Requirements:
 

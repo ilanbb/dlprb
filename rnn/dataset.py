@@ -1,6 +1,4 @@
 import numpy as np
-from sklearn.utils import shuffle
-
 
 class Dataset():
     """
@@ -21,7 +19,6 @@ class Dataset():
 
     def reset(self):
         self.curr_ind = 0
-        # self.x1, self.x2, self.y = shuffle(self.x1, self.x2, self.y, random_state=0)  # shuffle training data
 
     def next_batch(self):
         end_ind = self.curr_ind + self.batch_size

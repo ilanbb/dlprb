@@ -5,7 +5,6 @@ from dataset import Dataset
 from utils import *
 from cnn_utils import *
 from tensorflow.contrib import rnn
-from sklearn.utils import shuffle
 
 # Debug object
 zeros = tf.zeros((1, 6), dtype=tf.float32)

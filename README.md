@@ -52,7 +52,7 @@ The next five lines of the block encodes the structural contexts probabilities a
 	0.0000	0.0000	0.0010	0.0010	0.0003	0.0001
 	0.9977	0.9792	0.9776	0.9738	0.0096	0.0074
 
-The data directory should contain all experiments files. Every experiment has four possible related files(two for training and two for testing): 
+The data directory should contain all experiments files. Every experiment has four possible related files (two for training and two for testing): 
 - Train sequence-information file.
 - Train structure-information file.
 - Test sequence-information file.

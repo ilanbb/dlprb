@@ -37,11 +37,13 @@ Testing:
 Input format:
 
 A sequence-information file contains a set of sequnces together with their estimated binding affinities. Every line in the files starts with binding affinity and then followed by the RNA sequence. For example:
+
 	-0.975763 AGAAGGCACCAACAGAAGCUCUAACCAGACUAGCCACC
 
 A structure-information file contains an RNA secondary structure annotations of the sequences estimated. The structure information of a seuqence is encoded within a block of six lines. 
 The first line stores the sequence itself, preceded with a '>' sign.
 The next five lines of the block encodes the structural contexts probabilities at each position, every row corresponds to a different structural context: paired, hairpin loop, internal loop, multiloop, and external loop. For example:
+
 	>AGAACU
 	0.0023	0.0208	0.0031	0.0041	0.987	0.9878
 	0.0000	0.0000	0.0004	0.0004	0.0004	0.0044

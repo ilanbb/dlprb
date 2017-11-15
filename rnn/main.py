@@ -63,6 +63,11 @@ DATA_DIR = "../data/"
 loggername = "results-" + __file__[:__file__.index('.')] + ".txt"
 
 all_files = glob.glob(DATA_DIR + 'RNCMPT00[0-9][0-9][0-9].txt.annotations_A.RNAcontext-sample')
+
+if len(all_files) == 0:
+    print ("Warning: no input files found!")
+    exit()
+
 exp_indices = list()
 for file_name in all_files:
     counter_start_index = len(DATA_DIR) + 8 

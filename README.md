@@ -2,6 +2,7 @@
 DLPRB: A Deep Learning Approach for Predicting Protein-RNA Binding
 
 A TensorFlow implementation of two deep neural networks (DNN's): a convolutional neural netwrk (CNN) and a recurrent neural network (RNN).
+The main.py files are currently adjusted for analyzing the RNAcompete dataset of 244 experiments.
 
 Requirements:
 
@@ -51,9 +52,11 @@ The next five lines of the block encodes the structural contexts probabilities a
 	0.0000	0.0000	0.0010	0.0010	0.0003	0.0001
 	0.9977	0.9792	0.9776	0.9738	0.0096	0.0074
 
-The data directory should contain all experiments files. Every experiment has four related files: 
+The data directory should contain all experiments files. Every experiment has four possible related files(two for training and two for testing): 
 - Train sequence-information file.
 - Train structure-information file.
 - Test sequence-information file.
 - Test structure-information file.
+
+When testing, the directory including the main.py file should also contain the files produced by the training module.
 

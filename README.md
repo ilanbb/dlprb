@@ -15,7 +15,8 @@ Setting up:
 
 		2a. Change the DATA_DIR variable in main.py to point to the actual input files directory.
 
-		2b. Change the following variables in main.py according to the actual input file name patterns: all_files, TRAIN_STRUCTURE_FILE, TEST_STRUCTURE_FILE, TRAIN_SEQUENCE_FILE, TERST_SEQUENCE_FILE.
+		2b. Change the following variables in main.py according to the actual input file name patterns: 
+all_files, TRAIN_STRUCTURE_FILE, TEST_STRUCTURE_FILE, TRAIN_SEQUENCE_FILE, TERST_SEQUENCE_FILE.
 
 Training:
 

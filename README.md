@@ -24,15 +24,15 @@ Setting up:
 
 Training:
 
-	For traininig a CNN architecture: python3.4 cnn/main.py train
+	For traininig a CNN architecture: python main.py train (from the cnn directory)
 
-	For traininig an RNN architecture: python3.4 rnn/main.py train
+	For traininig an RNN architecture: python main.py train (from the rnn directory)
 
 Testing:
 
-	For testing pre-trained CNN architecture: python3.4 cnn/main.py test
+	For testing pre-trained CNN architecture: python main.py test (from the cnn directory)
 
-	For testing pre-trained RNN architecture: python3.4 rnn/main.py test
+	For testing pre-trained RNN architecture: python main.py test (from the rnn directory)
 
 Input format:
 

@@ -54,7 +54,7 @@ filters_set = [filters_3, filters_7, filters_8]
 # Set strides
 strides_x_y = (1, 1)
 
-network_name = 'network'
+network_name = './network'
 
 # Set data paths
 DATA_DIR = "../data/"

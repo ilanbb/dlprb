@@ -10,30 +10,25 @@ Requirements:
 
 Setting up:
 
-	1. Clone the repositopry into your working space.
-
-	2. for both cnn and rnn directories:
-
-		2a. Change the DATA_DIR variable in main.py to point to the actual input files directory.
-
-		2b. Change the following variables in main.py according to the actual input file name patterns: 
-			(*) all_files
-			(*) TRAIN_STRUCTURE_FILE
-			(*) TEST_STRUCTURE_FILE
-			(*) TRAIN_SEQUENCE_FILE
-			(*) TERST_SEQUENCE_FILE
+	Clone the repositopry into your working space.
 
 Training:
 
-	For traininig a CNN architecture: python main.py train (from the cnn directory)
+	For traininig a CNN architecture (from the cnn directory): python main.py train <train-data-dir>
 
-	For traininig an RNN architecture: python main.py train (from the rnn directory)
+	For traininig an RNN architecture (from the rnn directory): python main.py train <train-data-dir>
 
 Testing:
 
-	For testing pre-trained CNN architecture: python main.py test (from the cnn directory)
+	For testing pre-trained CNN architecture (from the cnn directory): python main.py test <test-data-dir>
 
-	For testing pre-trained RNN architecture: python main.py test (from the rnn directory)
+	For testing pre-trained RNN architecture (from the rnn directory): python main.py test <test-data-dir>
+
+File names:
+
+	Sequence-information file should have the string "sequences" in its name.
+	Structure-information file should have the string "annotations" in its name.
+        Training and testing files of the same experiment should have the same name (in two different directories).
 
 Input format:
 
@@ -52,9 +47,11 @@ The next five lines of the block encodes the structural contexts probabilities a
 	0.0000	0.0000	0.0010	0.0010	0.0003	0.0001
 	0.9977	0.9792	0.9776	0.9738	0.0096	0.0074
 
-The data directory should contain all experiments files. Every experiment has four possible related files (two for training and two for testing): 
+Every experiment has four possible related files (two for training and two for testing).
+The train data directory should contain the following files:
 - Train sequence-information file.
 - Train structure-information file.
+The test data directory should contain the following files:
 - Test sequence-information file.
 - Test structure-information file.
 

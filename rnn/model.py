@@ -47,10 +47,8 @@ class MBPredictor:
 
         tf.reset_default_graph()
         # Store data paths
-        self.train_seq_path = data_paths[0]
-        self.train_struct_path = data_paths[1]
-        self.test_seq_path = data_paths[2]
-        self.test_struct_path = data_paths[3]
+        self.seq_path = data_paths[0]
+        self.struct_path = data_paths[1]
 
         # Store network parameters 
         self.params = params
@@ -76,8 +74,8 @@ class MBPredictor:
         #tf.reset_default_graph()
 
         # Get numpy arrays with data (training and testing)
-        all_train_data, all_train_lengths, all_train_labels, all_train_size = read_combined_data(self.train_seq_path,    \
-                                                                                                 self.train_struct_path, \
+        all_train_data, all_train_lengths, all_train_labels, all_train_size = read_combined_data(self.seq_path,    \
+                                                                                                 self.struct_path, \
                                                                                                  self.params['max_seq_len'])
         # Create dataset object for batching
         dataset = Dataset(all_train_data, all_train_lengths, all_train_labels, self.params['batch_size'])
@@ -161,8 +159,8 @@ class MBPredictor:
     '''
     def test(self):
 
-        test_data, test_lengths, test_labels, test_size = read_combined_data(self.test_seq_path, \
-                                                                             self.test_struct_path, \
+        test_data, test_lengths, test_labels, test_size = read_combined_data(self.seq_path, \
+                                                                             self.struct_path, \
                                                                              self.params['max_seq_len'])
 
         # Create a test session

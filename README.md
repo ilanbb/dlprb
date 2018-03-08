@@ -28,7 +28,7 @@ File names:
 
 	Sequence-information file should have the string "sequences" in its name.
 	Structure-information file should have the string "annotations" in its name.
-        Training and testing files of the same experiment should have the same name (in two different directories).
+	Training and testing files of the same experiment should have the same name (in two different directories).
 
 Input format:
 

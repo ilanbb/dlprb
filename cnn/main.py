@@ -56,8 +56,8 @@ if not data_dir.endswith(os.path.sep):
 # Set loggin options
 loggername = "results-" + __file__[:__file__.index('.')] + ".txt"
 
-struct_files = glob.glob(data_dir + '*annotations*')
-sequence_files = glob.glob(data_dir + '*sequences*')
+struct_files = sorted(glob.glob(data_dir + '*annotations*'))
+sequence_files = sorted(glob.glob(data_dir + '*sequences*'))
 
 if len(struct_files) == 0 or len(sequence_files) == 0:
     print ("Warning: no input files found!")

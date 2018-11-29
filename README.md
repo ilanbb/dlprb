@@ -4,6 +4,8 @@ DLPRB: A Deep Learning Approach for Predicting Protein-RNA Binding
 A TensorFlow implementation of two deep neural networks (DNN's): a convolutional neural netwrk (CNN) and a recurrent neural network (RNN).
 The main.py files are currently adjusted for analyzing the RNAcompete dataset of 244 experiments.
 
+For more details see the full paper: <a href="https://academic.oup.com/bioinformatics/article/34/17/i638/5093226">A deep neural network approach for learning intrinsic protein-RNA binding preferences<a/>.
+	
 Requirements:
 
 	Python, Numpy, Tensorflow.
